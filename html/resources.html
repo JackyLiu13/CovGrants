@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>W5 Hackathon</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+      <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <!-- Boot Strap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">    
+
+	</script>
+    
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	 crossorigin="anonymous">
+    <!-- Minimize button -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Font -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+</style>
+    <!-- awesome font -->
+    <script src="https://kit.fontawesome.com/8b2863009b.js" crossorigin="anonymous"></script>
+    <!-- jquery for nav bar -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function(){
+        $('.menu').click(function(){
+            $('ul').toggleClass('active');
+        })
+      });
+  </script>
+  </head>
+  <body>
+    <script src="/JS/script.js"></script>
+    <header>
+		<div class="logo">
+			<img src="/assets/covgrants.png">
+		</div>
+    <!-- Navigation bar -->
+		<nav>
+        <div class="toggle">
+            <a href="#">
+                <i class="fa fa-bars menu"></i>
+            </a>
+        </div>
+        <ul>
+            <a href="/index.html"><li>Home</li></a>
+            <a href="#resources"><li class="active">Web Resources</li></a>
+            <a href="/html/contact.html"><li>Contact Us</li></a>
+            <a href="/html/filter.html"><li>Grants</li></a>
+        </ul>
+    </nav>
+	</header>
+  <section class="resources">
+    <div class="container">
+      <div class="row">
+        <div class ="col-12">
+          <h1>Free Resources</h1>
+        </div>
+      </div>
+      <!-- TABLE 1 Button Header-->
+      <div class="row" id="sub-header">
+        <div class ="col-12">
+          <button onclick="toggleTable('tableToggle'); change('toggleIcon')" class="btn"><h2>Mental Health</h2>
+          <i id="toggleIcon" class="fa-solid fa-caret-down"></i>
+          </button> 
+        </div>
+      </div>  
+      
+        <div class="row">
+          <div class="col-12" id="tableToggle">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkh6Qoru2CEJ1IiebUMHMjep490d8G2NP8uWXgnmsSYeQB9J-JM_v7Nagf8g6m7nnbcij-Ot6npAvy/pubhtml?gid=323929167&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+          </div>
+        </div>
+      
+      <!-- TABLE 2 -->
+      <div class="row" id="sub-header">
+        <div class ="col-12">
+          <button onclick="toggleTable('tableToggle2'); change('toggleIcon2')" class="btn"><h2>Finances</h2>
+          <i id="toggleIcon2" class="fa-solid fa-caret-down"></i>
+          </button> 
+        </div>
+      </div>  
+      <div class="row">
+          <div class="col-12" id="tableToggle2">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkh6Qoru2CEJ1IiebUMHMjep490d8G2NP8uWXgnmsSYeQB9J-JM_v7Nagf8g6m7nnbcij-Ot6npAvy/pubhtml?gid=554927395&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+          </div>
+      </div>
+      <!-- Submit Forms -->
+      <div class="row" id="header-two">
+        <div class="col-12">
+          <h1>Submit Resource</h1>
+        </div>
+      </div>
+      <div class="row" id="form">
+        <div class= "col-12">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7ft4VJAI0OZYxZti4qa3Vjd87YsmzwlTIomRfbSJKRI5ElA/viewform?embedded=true" width= auto height=auto frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+    
+  </body>
+</html>
